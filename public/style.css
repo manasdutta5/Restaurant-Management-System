@@ -1,0 +1,161 @@
+/* Styling div for login form */
+.container_login {
+  padding-top: 10%;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: white;
+}
+
+/* home page image */
+.show_image {
+  background-image: url("images/slider-02.jpg");
+  opacity: 70%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* User Dashboard css */
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+/* End of user dashboard css */
+
+.main {
+  margin-top: 5rem;
+}
+
+/* User view of stores page */
+.userstores {
+  background-image: url("images/stores.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Orders Page User CSS */
+
+.userorder {
+  background-image: url("images/order_page_wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side , mainly for card on the order page*/
+
+.centered a {
+  /* font-size: 25px; */
+  text-decoration: none;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.5em;
+  color: black;
+}
+
+.left {
+  left: 15%;
+  top: 32%;
+  opacity: 60%;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  /* top:auto; */
+  position: absolute;
+  top: 8%;
+}
+
+.right2 {
+  right: 0;
+  /* top:auto; */
+  position: absolute;
+  top: 30%;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Order Page CSS User Ends Here */
+.orderform {
+  margin-top: 10rem;
+  padding-right: 5rem;
+}
+
+.submit {
+  padding-top: 1rem;
+}
+
+/* UPDATE STORE FORM */
+.updatestoreform {
+  padding-left: 21%;
+  padding-top: 1%;
+  padding-right: 21%;
+}

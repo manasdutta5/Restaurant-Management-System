@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Management System</title>
+    <!-- Bootstrap CDN Start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <!-- Bootstrap CDN End -->
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="userstores">
+    <!-- Bootstrap NAVBAR Starts -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Hunger Point</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/user_dashboard">Home</a>
+                        </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/manage_stores">Manage Stores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/manage_products">Manage Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/manage_orders">Manage Orders</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/manage_customers">Manage Customers</a>
+                    </li>
+
+                    <!-- dropdown menu for logout and profile -->
+                    <div class="navbar-nav nav-item dropdown dropdown-menu-right" style="margin-left: 45rem">
+                        <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" href="">
+                            <%=user%>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="">Active Orders</a>
+                            <a class="dropdown-item" href="/user_login">Logout</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h3 style="padding: 3%; text-align: center;">Add a Product:</h3>
+    <!-- Form to update info -->
+
+    <!-- //Update store form goes here -->
+    <div class="updatestoreform">
+        <form action="/modify_items" method="POST">
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">New Dish ID:</label>
+                <input name="newdishid" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Product id, eg: 001">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">New Product Name:</label>
+                <input name="newproductname" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Product Name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Product Rating</label>
+                <input name="rating" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Rating, number out of 5">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Type</label>
+                <input name="dish" class="form-control" id="exampleFormControlInput1"
+                    placeholder="enter product type, eg: Indian, continental etc">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Price:</label>
+                <input name="productprice" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Product Price, number">
+            </div>
+
+
+            <div class="submit"><input type="submit" value="Modify Product Details"></div>
+        </form>
+
+    </div>
+
+    <!-- js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
